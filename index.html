@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto+Mono:wght@100..700&family=Rubik:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/pro-light.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      ::selection {
+        background: #000;
+        color: white;
+        text-shadow: none;
+      }
+
+      .hover-flip {
+        transition: transform 0s;
+      }
+      .hover-flip:hover img {
+        transform: scaleX(-1);
+      }
+
+      .fa-solid {
+        color: red;
+        font-size: 35px;
+      }
+      .fa-contact {
+        font-size: 15px;
+      }
+      .cart-nav {
+        font-size: 25px;
+      }
+      .fa-solid:hover {
+        cursor: pointer;
+      }
+
+      .cart-toast {
+        font-size: 15px;
+      }
+    </style>
+
+    <style>
+      .icon-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 8px;
+      }
+
+      .text-hover {
+        opacity: 0;
+        transition: opacity 0.4s;
+        position: absolute;
+        bottom: 100%;
+        white-space: nowrap; /* Prevent text wrapping */
+      }
+
+      .icon-container:hover .text-hover {
+        opacity: 1;
+      }
+
+      .icon-social {
+        font-size: 24px;
+      }
+    </style>
+
+    <style>
+      .layer {
+        position: relative;
+        left: 740px;
+      }
+    </style>
+
+    <style>
+      .carousel-text {
+        filter: contrast(1.2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+    </style>
+
+    <style>
+      .navbar-collapse {
+        overflow: hidden;
+        transition: max-height 0.7s ease-in-out;
+      }
+
+      .navbar-collapse-open {
+        max-height: 800px; /* Adjust this value as needed */
+        width: 300px;
+      }
+
+      .navbar-collapse-closed {
+        max-height: 0;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
